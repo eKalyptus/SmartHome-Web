@@ -1,0 +1,37 @@
+{
+	"navbar" : {
+		"dashboard": "Dashboard",
+		"room_title": "Räume",
+		"add_room": "Raum Hinzufügen",
+		"settings": "Einstellungen",
+		"overview": "Überblick"
+	},
+	"graphs": {
+		"daily_temperature": "Tägliche Durchschnittstemperatur",
+		"monthly_temperature": "Monatliche Durchschnittstemperatur",
+		"sun_hours": "Sonnenstunden"
+	},
+	"global_actions": {
+		"global_actions": "Globale Aktionen",
+		"light_off": "Licht Aus",
+		"light_on": "Licht An",
+		"lock_door": "Tür Abschliessen",
+		"unlock_door": "Tür Aufschliessen"
+	},
+	"general":{
+		"months":{
+			"january": "Januar",
+			"february": "Februar",
+			"march": "März",
+			"april": "April",
+			"may": "Mai",
+			"june": "Juni",
+			"july": "Juli",
+			"august": "August",
+			"september": "September",
+			"october": "Oktober",
+			"november": "November",
+			"december": "Dezember"
+		}
+	}
+}

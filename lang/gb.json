@@ -1,0 +1,37 @@
+{
+	"navbar" : {
+		"dashboard": "Dashboard",
+		"room_title": "Rooms",
+		"add_room": "Add Room",
+		"settings": "Settings",
+		"overview": "Overview"
+	},
+	"graphs": {
+		"daily_temperature": "Daily Average Temperature",
+		"monthly_temperature": "Monthly Average Temperature",
+		"sun_hours": "Sunny Hours"
+	},
+	"global_actions": {
+		"global_actions": "Global Actions",
+		"light_off": "Lights Off",
+		"light_on": "Lights On",
+		"lock_door": "Lock Door",
+		"unlock_door": "Unlock Door"
+	},
+	"general":{
+		"months":{
+			"january": "January",
+			"february": "February",
+			"march": "March",
+			"april": "April",
+			"may": "May",
+			"june": "June",
+			"july": "July",
+			"august": "August",
+			"september": "September",
+			"october": "October",
+			"november": "November",
+			"december": "December"
+		}
+	}
+}
