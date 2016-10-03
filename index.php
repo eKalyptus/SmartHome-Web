@@ -14,7 +14,8 @@ $lng = json_decode(file_get_contents("lang/" . $lang . ".json"));
 ?>
 
 <head>
-	<title></title>
+	<meta charset="utf-8"/>
+	<title>SmartHome</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/flag-icon.css">
 	<script src="js/jquery.js"></script>
