@@ -20,7 +20,43 @@ $lng = json_decode(file_get_contents("lang/" . $lang . ".json"));
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.bundle.js"></script>
-	
+	<script>
+
+	$(document).ready(function(){
+
+		$('#lightsOff').click(function(){
+			//alert("Turn off the lights!");
+
+			$.ajax({
+				url: "changeLight.php",
+				type: "GET",
+				data: "status=0",
+				success: function(data){
+					return false;
+				}
+			});
+			return false;
+
+		});
+
+		$('#lightsOn').click(function(){
+			//alert("Turn on the lights!");
+
+			$.ajax({
+				url: "changeLight.php",
+				type: "GET",
+				data: "status=1",
+				success: function(data){
+					return false;
+				}
+			});
+			return false;
+
+		});
+
+	});
+
+	</script>
 </head>
 <body>
 
@@ -97,8 +133,8 @@ $lng = json_decode(file_get_contents("lang/" . $lang . ".json"));
 
 		<h3 style="margin-top: 30px;"><?=$lng->global_actions->global_actions?></h3>
 		<div class="btn-group btn-group-justified">
-		  <a href="#" class="btn btn-default"><?=$lng->global_actions->light_off?></a>
-		  <a href="#" class="btn btn-default"><?=$lng->global_actions->light_on?></a>
+		  <a href="#" class="btn btn-default" id="lightsOff"><?=$lng->global_actions->light_off?></a>
+		  <a href="#" class="btn btn-default" id="lightsOn"><?=$lng->global_actions->light_on?></a>
 		  <a href="#" class="btn btn-default"><?=$lng->global_actions->lock_door?></a>
 		  <a href="#" class="btn btn-default"><?=$lng->global_actions->unlock_door?></a>
 		</div>
